@@ -1,6 +1,6 @@
 import pandas as pd
 import matplotlib.pyplot as plt
-import  os
+import os
 
 def plotPie(filename, pngPath):
     csvDf = pd.read_csv(filename)

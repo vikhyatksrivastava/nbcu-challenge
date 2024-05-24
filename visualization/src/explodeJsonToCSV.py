@@ -1,5 +1,7 @@
 import json
 import csv
+
+
 # Part 0 - Data preparation.
 def explodejson(jsondata, parent='', delimitter='_'):
     element = {}
@@ -10,6 +12,7 @@ def explodejson(jsondata, parent='', delimitter='_'):
         else:
             element[newkey] = value
     return element
+
 
 def jsontocsv(jsonfile, csvfile):
     with open(jsonfile, 'r') as file:
@@ -30,14 +33,12 @@ def jsontocsv(jsonfile, csvfile):
     else:
         print("No data in JSON!")
 
+
 def main():
-    jsonfile = '../peacock-de-eval.tar/peacock-de-eval/ratings.tar/ratings/data/messages/messages.json'
-    csvfile = '../peacock-de-eval.tar/output/messages.csv'
+    jsonfile = '../peacock-de-eval/ratings/data/messages/messages.json'
+    csvfile = '../peacock-de-eval/output/messages.csv'
     jsontocsv(jsonfile, csvfile)
+
 
 if __name__ == '__main__':
     main()
-
-
-
-

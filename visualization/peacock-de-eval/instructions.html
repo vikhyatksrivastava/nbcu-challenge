@@ -1,0 +1,23 @@
+<h3 id="peacock-data-engineering-technical-evaluation">Peacock Data Engineering Technical Evaluation</h3>
+<p>There are three parts to this evaluation<br />
+0. (Optional) Data preparation. This type of work is common on our team. If you are not able to complete this part, that's okay! A processed data set is provided to work with in the subsequent parts.<br />
+1. Review the data and questions provided.<br />
+2. Build a visualization that provides insights into the data.</p>
+<h4 id="background">Background</h4>
+<p>Suppose we have a library where we require patrons rate the titles they read on a scale from 1 to 5. These ratings are collected in a series of JSON messages. The aim of this exercise to understand the titles and the viewership patterns.</p>
+<h4 id="part-zero">Part Zero</h4>
+<p>The JSON messages are received at the end of every day. The format of each message is</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode json"><code class="sourceCode json"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">{</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="er">&#39;id&#39;</span><span class="fu">:</span> <span class="er">&#39;User</span> <span class="er">ID&#39;</span><span class="fu">,</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  <span class="er">&#39;item&#39;</span><span class="fu">:</span> <span class="er">&#39;Title</span> <span class="er">Rated&#39;</span><span class="fu">,</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  <span class="er">&#39;rating&#39;</span><span class="fu">:</span> <span class="er">&#39;User</span> <span class="er">Rating&#39;</span><span class="fu">,</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>  <span class="er">&#39;datetime&#39;</span><span class="fu">:</span> <span class="er">&#39;Date</span> <span class="er">of</span> <span class="er">Rating&#39;</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">}</span></span></code></pre></div>
+<p>The file <code>ratings.tar.gz</code> contains a JSON object with messages from the past 6 months. The aim of this part is to organize this data into a format usable for visualization and analysis.</p>
+<h4 id="part-one">Part One</h4>
+<p>You can either use the data generated in Part Zero or you can utilize <code>ratings_clean.csv.gz</code>. Here are some questions to get things started.<br />
+1. What are the most popular titles?<br />
+2. What groups of patrons are similar?<br />
+These are broad questions that you should expand upon. What other insights can you share?</p>
+<h4 id="part-two">Part Two</h4>
+<p>In the visualization tool of choice, build a collection of visualizations to provide insights to the questions above and other items you uncover. Once this is complete, package all code, documentation, and visualization into a zip file.</p>
