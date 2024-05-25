@@ -1,7 +1,6 @@
 import json
 import csv
 
-
 # Part 0 - Data preparation.
 def explodejson(jsondata, parent='', delimitter='_'):
     element = {}

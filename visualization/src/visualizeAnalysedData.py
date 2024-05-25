@@ -23,10 +23,10 @@ def plotBarChart(filename, pngPath):
         os.remove(pngPath)
     plt.savefig(pngPath)
 def main():
-    fileName1 = "../peacock-de-eval.tar/output/Daily_Item_Count_Rated.csv"
-    pngPath1 = "../peacock-de-eval.tar/output/Daily_Item_Count_Rated.png"
-    fileName2 = "../peacock-de-eval.tar/output/Daily_Count_of_Rating.csv"
-    pngPath2 = "../peacock-de-eval.tar/output/Daily_Count_of_Rating.png"
+    fileName1 = "../peacock-de-eval/output/Daily_Item_Count_Rated.csv"
+    pngPath1 = "../peacock-de-eval/output/Daily_Item_Count_Rated.png"
+    fileName2 = "../peacock-de-eval/output/Daily_Count_of_Rating.csv"
+    pngPath2 = "../peacock-de-eval/output/Daily_Count_of_Rating.png"
     plotPie(fileName1,pngPath1)
     plotBarChart(fileName2, pngPath2)
 
